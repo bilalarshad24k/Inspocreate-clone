@@ -1,0 +1,158 @@
+/* Custom CSS for Inspocreate Project..
+
+In this file Some Default Bootstrap rules are being override */
+
+
+/* In this Section We'll be Styling Header according to our design Module, For this purpose we'll be assigning some extra classes to our bootstrap built in classes to override some default bootstrap rules*/
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: #c9c9c9;
+    /*box-shadow:none;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #c9c9c9;
+    outline: 0 none;
+}
+
+.form-control {
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+.search_icon {
+    background: transparent;
+    border-left: 0px;
+    border-radius: 0px;
+}
+
+.searchBox {
+    width: 90% !important;
+    max-width: 100% !important;
+}
+
+.log {
+    padding-top: 10px !important;
+}
+
+.btn-community {
+    background: #7f6aee;
+    border-color: #7f6aee;
+}
+
+.btn-community:hover {
+    border-color: #7058eb;
+    background: #7058eb;
+}
+
+.togicon {
+    border-radius: 4px;
+    color: #303030;
+    font-size: 1.2rem;
+    border: 2px solid #303030;
+}
+
+.togbtn:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*End of Header Settings For Desktop*/
+
+
+/*Header Settings For Mobile*/
+
+
+/* End of Header Settings For Mobile */
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@---------------   Styling For Section 2 --------------@@@@@@@@@@@@@@@ */
+
+.categSection {
+    background-image: url(Media/Group\ 209.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 29px -105px;
+}
+
+.categItem,
+.categItem :focus {
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    padding: 9px;
+    margin: 0 10px;
+    object-fit: contain;
+    border-radius: 2px;
+    border: 1px solid #e0e3e7;
+    box-shadow: 0 6px 10px 0 rgba(131, 134, 163, .2) !important;
+}
+
+
+/*the section below will select the before pseudo element of "p" in focus state of element with class of "categItem" */
+
+.styleCategItem {
+    border: 1px solid #a93a8c;
+    background-color: rgba(169, 58, 140, 0.1);
+    border-radius: 3px;
+    box-shadow: none !important;
+}
+
+.styleCategItem>p:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-size: 8px;
+    margin-right: 5px;
+    padding: 1px 3px;
+    color: white;
+    border-radius: 50%;
+    background-color: #a93a8c;
+}
+
+.categItem p {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.slickSlider {
+    margin: 0 0 20px;
+}
+
+.tabSection {
+    margin: 40px 0px;
+    gap: 30px;
+}
+
+.in-activ-tab span {
+    color: #5c5f64;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.activ-tab span {
+    color: #101727;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
